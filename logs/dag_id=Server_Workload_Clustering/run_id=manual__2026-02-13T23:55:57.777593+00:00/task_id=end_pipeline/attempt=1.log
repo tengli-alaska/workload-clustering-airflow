@@ -1,0 +1,34 @@
+[2026-02-13T23:56:34.162+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: Server_Workload_Clustering.end_pipeline manual__2026-02-13T23:55:57.777593+00:00 [queued]>
+[2026-02-13T23:56:34.178+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: Server_Workload_Clustering.end_pipeline manual__2026-02-13T23:55:57.777593+00:00 [queued]>
+[2026-02-13T23:56:34.180+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2026-02-13T23:56:34.181+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2026-02-13T23:56:34.181+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2026-02-13T23:56:34.198+0000] {taskinstance.py:1300} INFO - Executing <Task(BashOperator): end_pipeline> on 2026-02-13 23:55:57.777593+00:00
+[2026-02-13T23:56:34.216+0000] {standard_task_runner.py:55} INFO - Started process 2868 to run task
+[2026-02-13T23:56:34.221+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'Server_Workload_Clustering', 'end_pipeline', 'manual__2026-02-13T23:55:57.777593+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/***.py', '--cfg-path', '/tmp/tmp3p1zm4kl']
+[2026-02-13T23:56:34.223+0000] {standard_task_runner.py:83} INFO - Job 30: Subtask end_pipeline
+[2026-02-13T23:56:34.287+0000] {task_command.py:388} INFO - Running <TaskInstance: Server_Workload_Clustering.end_pipeline manual__2026-02-13T23:55:57.777593+00:00 [running]> on host dd3b82610d33
+[2026-02-13T23:56:34.349+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=alaska
+AIRFLOW_CTX_DAG_ID=Server_Workload_Clustering
+AIRFLOW_CTX_TASK_ID=end_pipeline
+AIRFLOW_CTX_EXECUTION_DATE=2026-02-13T23:55:57.777593+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2026-02-13T23:55:57.777593+00:00
+[2026-02-13T23:56:34.351+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2026-02-13T23:56:34.353+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'echo "========================================" && echo "Pipeline completed at: $(date)" && echo "Model artifacts:" && ls -lh /opt/***/dags/model/ && echo "========================================" && echo "SUCCESS: Workload clustering pipeline finished."']
+[2026-02-13T23:56:34.370+0000] {subprocess.py:86} INFO - Output:
+[2026-02-13T23:56:34.371+0000] {subprocess.py:93} INFO - ========================================
+[2026-02-13T23:56:34.373+0000] {subprocess.py:93} INFO - Pipeline completed at: Fri Feb 13 23:56:34 UTC 2026
+[2026-02-13T23:56:34.373+0000] {subprocess.py:93} INFO - Model artifacts:
+[2026-02-13T23:56:34.375+0000] {subprocess.py:93} INFO - total 4.0K
+[2026-02-13T23:56:34.376+0000] {subprocess.py:93} INFO - -rw-r--r-- 1 default root 2.9K Feb 13 23:56 workload_model.sav
+[2026-02-13T23:56:34.376+0000] {subprocess.py:93} INFO - ========================================
+[2026-02-13T23:56:34.376+0000] {subprocess.py:93} INFO - SUCCESS: Workload clustering pipeline finished.
+[2026-02-13T23:56:34.377+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-02-13T23:56:34.402+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=Server_Workload_Clustering, task_id=end_pipeline, execution_date=20260213T235557, start_date=20260213T235634, end_date=20260213T235634
+[2026-02-13T23:56:34.445+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2026-02-13T23:56:34.504+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

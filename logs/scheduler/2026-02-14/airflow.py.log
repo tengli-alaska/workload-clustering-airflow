@@ -1,0 +1,849 @@
+[2026-02-14T00:00:03.263+0000] {processor.py:153} INFO - Started process (PID=674) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:00:03.264+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:00:03.265+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:00:03.265+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:00:04.144+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:00:04.144+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:00:04.144+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:00:04.144+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:00:04.145+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:00:04.144+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:00:04.145+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:00:04.145+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:00:04.145+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:00:04.145+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:00:04.145+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:00:04.145+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:00:04.150+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:00:04.184+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:00:04.184+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:00:04.207+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:00:04.206+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:00:04.219+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.959 seconds
+[2026-02-14T00:00:34.726+0000] {processor.py:153} INFO - Started process (PID=724) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:00:34.728+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:00:34.729+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:00:34.729+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:00:36.321+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:00:36.320+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:00:36.323+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:00:36.323+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:00:36.324+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:00:36.324+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:00:36.324+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:00:36.324+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:00:36.325+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:00:36.325+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:00:36.325+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:00:36.325+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:00:36.333+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:00:36.361+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:00:36.360+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:00:36.387+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:00:36.387+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:00:36.400+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.680 seconds
+[2026-02-14T00:01:06.876+0000] {processor.py:153} INFO - Started process (PID=758) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:01:06.878+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:01:06.879+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:01:06.879+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:01:07.797+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:01:07.796+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:01:07.797+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:01:07.797+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:01:07.797+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:01:07.797+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:01:07.797+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:01:07.797+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:01:07.798+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:01:07.798+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:01:07.798+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:01:07.798+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:01:07.803+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:01:07.833+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:01:07.832+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:01:07.855+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:01:07.855+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:01:07.869+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.011 seconds
+[2026-02-14T00:01:38.294+0000] {processor.py:153} INFO - Started process (PID=807) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:01:38.295+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:01:38.296+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:01:38.296+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:01:39.292+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:01:39.291+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:01:39.293+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:01:39.293+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:01:39.293+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:01:39.293+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:01:39.294+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:01:39.293+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:01:39.294+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:01:39.294+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:01:39.297+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:01:39.297+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:01:39.307+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:01:39.343+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:01:39.343+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:01:39.366+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:01:39.366+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:01:39.379+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.095 seconds
+[2026-02-14T00:02:09.772+0000] {processor.py:153} INFO - Started process (PID=856) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:02:09.774+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:02:09.775+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:02:09.775+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:02:10.763+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:02:10.762+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:02:10.763+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:02:10.763+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:02:10.764+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:02:10.764+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:02:10.764+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:02:10.764+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:02:10.764+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:02:10.764+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:02:10.764+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:02:10.764+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:02:10.771+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:02:10.793+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:02:10.793+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:02:10.813+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:02:10.813+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:02:10.824+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.060 seconds
+[2026-02-14T00:02:41.513+0000] {processor.py:153} INFO - Started process (PID=890) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:02:41.518+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:02:41.519+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:02:41.519+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:02:42.478+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:02:42.477+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:02:42.478+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:02:42.478+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:02:42.478+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:02:42.478+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:02:42.478+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:02:42.478+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:02:42.479+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:02:42.479+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:02:42.479+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:02:42.479+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:02:42.485+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:02:42.517+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:02:42.517+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:02:42.535+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:02:42.535+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:02:42.547+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.043 seconds
+[2026-02-14T00:03:13.317+0000] {processor.py:153} INFO - Started process (PID=940) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:03:13.319+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:03:13.320+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:03:13.320+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:03:14.954+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:03:14.954+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:03:14.955+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:03:14.955+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:03:14.956+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:03:14.955+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:03:14.956+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:03:14.956+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:03:14.957+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:03:14.957+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:03:14.957+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:03:14.957+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:03:14.981+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:03:15.060+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:03:15.053+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:03:15.141+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:03:15.141+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:03:15.167+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.856 seconds
+[2026-02-14T00:03:45.740+0000] {processor.py:153} INFO - Started process (PID=974) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:03:45.742+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:03:45.743+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:03:45.743+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:03:46.629+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:03:46.629+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:03:46.629+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:03:46.629+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:03:46.630+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:03:46.630+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:03:46.630+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:03:46.630+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:03:46.630+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:03:46.630+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:03:46.630+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:03:46.630+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:03:46.635+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:03:46.660+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:03:46.659+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:03:46.681+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:03:46.681+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:03:46.694+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.961 seconds
+[2026-02-14T00:04:16.799+0000] {processor.py:153} INFO - Started process (PID=1008) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:04:16.802+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:04:16.805+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:04:16.805+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:04:18.625+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:04:18.624+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:04:18.625+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:04:18.625+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:04:18.625+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:04:18.625+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:04:18.626+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:04:18.626+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:04:18.626+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:04:18.626+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:04:18.626+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:04:18.626+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:04:18.633+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:04:18.684+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:04:18.684+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:04:18.708+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:04:18.707+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:04:18.728+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.939 seconds
+[2026-02-14T00:04:49.309+0000] {processor.py:153} INFO - Started process (PID=1051) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:04:49.311+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:04:49.312+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:04:49.312+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:04:51.110+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:04:51.109+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:04:51.111+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:04:51.111+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:04:51.111+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:04:51.111+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:04:51.112+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:04:51.111+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:04:51.112+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:04:51.112+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:04:51.112+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:04:51.112+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:04:51.125+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:04:51.186+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:04:51.185+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:04:51.231+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:04:51.231+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:04:51.269+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.965 seconds
+[2026-02-14T00:05:22.069+0000] {processor.py:153} INFO - Started process (PID=1092) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:05:22.070+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:05:22.071+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:05:22.071+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:05:23.110+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:05:23.110+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:05:23.110+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:05:23.110+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:05:23.111+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:05:23.111+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:05:23.111+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:05:23.111+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:05:23.111+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:05:23.111+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:05:23.111+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:05:23.111+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:05:23.118+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:05:23.157+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:05:23.156+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:05:23.180+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:05:23.180+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:05:23.197+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.134 seconds
+[2026-02-14T00:05:53.545+0000] {processor.py:153} INFO - Started process (PID=1126) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:05:53.547+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:05:53.548+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:05:53.548+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:05:54.512+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:05:54.511+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:05:54.513+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:05:54.512+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:05:54.513+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:05:54.513+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:05:54.513+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:05:54.513+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:05:54.513+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:05:54.513+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:05:54.514+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:05:54.514+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:05:54.524+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:05:54.560+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:05:54.560+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:05:54.581+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:05:54.581+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:05:54.593+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.056 seconds
+[2026-02-14T00:06:25.001+0000] {processor.py:153} INFO - Started process (PID=1176) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:06:25.003+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:06:25.004+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:06:25.004+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:06:25.672+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:06:25.672+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:06:25.672+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:06:25.672+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:06:25.672+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:06:25.672+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:06:25.673+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:06:25.673+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:06:25.673+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:06:25.673+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:06:25.673+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:06:25.673+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:06:25.678+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:06:25.698+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:06:25.698+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:06:25.717+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:06:25.717+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:06:25.729+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.733 seconds
+[2026-02-14T00:06:56.474+0000] {processor.py:153} INFO - Started process (PID=1219) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:06:56.476+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:06:56.476+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:06:56.476+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:06:58.088+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:06:58.088+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:06:58.092+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:06:58.092+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:06:58.096+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:06:58.096+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:06:58.098+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:06:58.097+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:06:58.098+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:06:58.098+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:06:58.099+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:06:58.099+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:06:58.112+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:06:58.200+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:06:58.199+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:06:58.282+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:06:58.282+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:06:58.318+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.852 seconds
+[2026-02-14T00:07:28.527+0000] {processor.py:153} INFO - Started process (PID=1260) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:07:28.537+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:07:28.539+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:07:28.539+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:07:30.485+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:07:30.484+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:07:30.485+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:07:30.485+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:07:30.486+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:07:30.486+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:07:30.486+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:07:30.486+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:07:30.487+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:07:30.486+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:07:30.487+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:07:30.487+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:07:30.499+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:07:30.534+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:07:30.534+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:07:30.564+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:07:30.564+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:07:30.581+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 2.068 seconds
+[2026-02-14T00:08:01.454+0000] {processor.py:153} INFO - Started process (PID=1294) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:08:01.457+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:08:01.459+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:08:01.459+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:08:02.478+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:08:02.478+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:08:02.478+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:08:02.478+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:08:02.478+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:08:02.478+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:08:02.479+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:08:02.478+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:08:02.479+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:08:02.479+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:08:02.479+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:08:02.479+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:08:02.485+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:08:02.509+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:08:02.508+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:08:02.527+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:08:02.527+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:08:02.538+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.100 seconds
+[2026-02-14T00:08:32.920+0000] {processor.py:153} INFO - Started process (PID=1337) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:08:32.922+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:08:32.924+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:08:32.923+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:08:38.347+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:08:38.346+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:08:38.348+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:08:38.348+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:08:38.348+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:08:38.348+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:08:38.349+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:08:38.349+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:08:38.349+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:08:38.349+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:08:38.350+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:08:38.349+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:08:38.365+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:08:38.432+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:08:38.431+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:08:38.468+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:08:38.468+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:08:38.485+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 5.570 seconds
+[2026-02-14T00:09:09.003+0000] {processor.py:153} INFO - Started process (PID=1378) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:09:09.006+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:09:09.009+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:09:09.009+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:09:11.129+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:09:11.127+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:09:11.133+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:09:11.133+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:09:11.134+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:09:11.134+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:09:11.134+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:09:11.134+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:09:11.134+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:09:11.134+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:09:11.135+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:09:11.135+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:09:11.169+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:09:11.222+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:09:11.221+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:09:11.253+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:09:11.252+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:09:11.275+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 2.287 seconds
+[2026-02-14T00:09:42.011+0000] {processor.py:153} INFO - Started process (PID=1411) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:09:42.014+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:09:42.015+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:09:42.015+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:09:43.737+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:09:43.737+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:09:43.739+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:09:43.738+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:09:43.739+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:09:43.739+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:09:43.740+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:09:43.739+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:09:43.740+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:09:43.740+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:09:43.741+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:09:43.741+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:09:43.775+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:09:44.139+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:09:44.136+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:09:44.229+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:09:44.229+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:09:44.282+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 2.281 seconds
+[2026-02-14T00:10:14.881+0000] {processor.py:153} INFO - Started process (PID=1461) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:10:14.883+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:10:14.884+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:10:14.884+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:10:15.866+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:10:15.866+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:10:15.866+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:10:15.866+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:10:15.867+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:10:15.866+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:10:15.867+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:10:15.867+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:10:15.867+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:10:15.867+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:10:15.867+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:10:15.867+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:10:15.872+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:10:15.896+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:10:15.896+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:10:15.914+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:10:15.914+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:10:15.925+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.052 seconds
+[2026-02-14T00:10:46.425+0000] {processor.py:153} INFO - Started process (PID=1495) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:10:46.430+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:10:46.431+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:10:46.431+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:10:47.457+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:10:47.456+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:10:47.457+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:10:47.457+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:10:47.458+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:10:47.457+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:10:47.458+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:10:47.458+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:10:47.458+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:10:47.458+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:10:47.458+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:10:47.458+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:10:47.467+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:10:47.497+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:10:47.496+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:10:47.516+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:10:47.516+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:10:47.527+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.126 seconds
+[2026-02-14T00:11:17.977+0000] {processor.py:153} INFO - Started process (PID=1545) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:11:17.995+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:11:17.999+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:11:17.998+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:11:18.884+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:11:18.884+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:11:18.884+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:11:18.884+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:11:18.885+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:11:18.885+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:11:18.885+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:11:18.885+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:11:18.885+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:11:18.885+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:11:18.885+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:11:18.885+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:11:18.894+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:11:18.917+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:11:18.917+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:11:18.936+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:11:18.936+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:11:18.949+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.979 seconds
+[2026-02-14T00:11:49.575+0000] {processor.py:153} INFO - Started process (PID=1586) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:11:49.577+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:11:49.579+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:11:49.579+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:11:51.148+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:11:51.143+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:11:51.158+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:11:51.157+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:11:51.159+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:11:51.159+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:11:51.160+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:11:51.160+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:11:51.162+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:11:51.161+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:11:51.163+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:11:51.162+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:11:51.254+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:11:51.368+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:11:51.367+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:11:51.437+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:11:51.436+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:11:51.503+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.944 seconds
+[2026-02-14T00:12:22.000+0000] {processor.py:153} INFO - Started process (PID=1629) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:12:22.002+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:12:22.004+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:12:22.003+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:12:23.428+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:12:23.427+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:12:23.429+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:12:23.429+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:12:23.429+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:12:23.429+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:12:23.430+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:12:23.430+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:12:23.431+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:12:23.431+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:12:23.431+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:12:23.431+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:12:23.452+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:12:23.576+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:12:23.575+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:12:23.635+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:12:23.635+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:12:23.652+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.661 seconds
+[2026-02-14T00:12:54.571+0000] {processor.py:153} INFO - Started process (PID=1664) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:12:54.573+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:12:54.574+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:12:54.574+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:12:55.456+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:12:55.456+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:12:55.457+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:12:55.457+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:12:55.457+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:12:55.457+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:12:55.457+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:12:55.457+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:12:55.457+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:12:55.457+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:12:55.457+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:12:55.457+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:12:55.463+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:12:55.484+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:12:55.484+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:12:55.502+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:12:55.502+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:12:55.514+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.948 seconds
+[2026-02-14T00:13:26.259+0000] {processor.py:153} INFO - Started process (PID=1714) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:13:26.260+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:13:26.261+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:13:26.261+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:13:27.878+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:13:27.877+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:13:27.881+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:13:27.880+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:13:27.881+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:13:27.881+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:13:27.882+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:13:27.882+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:13:27.882+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:13:27.882+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:13:27.884+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:13:27.884+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:13:27.920+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:13:28.064+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:13:28.063+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:13:28.256+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:13:28.255+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:13:28.306+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 2.052 seconds
+[2026-02-14T00:13:58.814+0000] {processor.py:153} INFO - Started process (PID=1748) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:13:58.816+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:13:58.817+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:13:58.817+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:14:00.716+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:14:00.715+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:14:00.718+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:14:00.718+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:14:00.721+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:14:00.721+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:14:00.724+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:14:00.724+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:14:00.726+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:14:00.726+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:14:00.726+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:14:00.726+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:14:00.739+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:14:00.777+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:14:00.776+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:14:00.803+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:14:00.803+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:14:00.825+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 2.022 seconds
+[2026-02-14T00:14:31.249+0000] {processor.py:153} INFO - Started process (PID=1798) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:14:31.250+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:14:31.253+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:14:31.252+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:14:32.061+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:14:32.060+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:14:32.061+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:14:32.061+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:14:32.061+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:14:32.061+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:14:32.062+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:14:32.062+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:14:32.062+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:14:32.062+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:14:32.062+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:14:32.062+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:14:32.067+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:14:32.092+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:14:32.092+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:14:32.110+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:14:32.109+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:14:32.120+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.875 seconds
+[2026-02-14T00:15:02.513+0000] {processor.py:153} INFO - Started process (PID=1832) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:15:02.514+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:15:02.515+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:15:02.515+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:15:03.525+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:15:03.524+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:15:03.526+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:15:03.526+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:15:03.526+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:15:03.526+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:15:03.526+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:15:03.526+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:15:03.527+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:15:03.526+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:15:03.527+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:15:03.527+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:15:03.534+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:15:03.572+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:15:03.572+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:15:03.597+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:15:03.597+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:15:03.614+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.105 seconds
+[2026-02-14T00:15:33.946+0000] {processor.py:153} INFO - Started process (PID=1882) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:15:33.949+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:15:33.950+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:15:33.950+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:15:35.245+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:15:35.244+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:15:35.245+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:15:35.245+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:15:35.246+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:15:35.246+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:15:35.246+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:15:35.246+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:15:35.246+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:15:35.246+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:15:35.246+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:15:35.246+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:15:35.258+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:15:35.296+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:15:35.296+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:15:35.319+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:15:35.319+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:15:35.334+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.395 seconds
+[2026-02-14T00:16:05.621+0000] {processor.py:153} INFO - Started process (PID=1916) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:16:05.623+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:16:05.624+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:16:05.624+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:16:06.538+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:16:06.538+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:16:06.539+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:16:06.538+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:16:06.539+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:16:06.539+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:16:06.539+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:16:06.539+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:16:06.539+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:16:06.539+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:16:06.539+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:16:06.539+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:16:06.545+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:16:06.570+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:16:06.570+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:16:06.588+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:16:06.587+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:16:06.599+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.991 seconds
+[2026-02-14T00:16:37.069+0000] {processor.py:153} INFO - Started process (PID=1966) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:16:37.071+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:16:37.074+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:16:37.073+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:16:38.073+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:16:38.072+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:16:38.074+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:16:38.073+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:16:38.075+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:16:38.074+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:16:38.076+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:16:38.075+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:16:38.077+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:16:38.076+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:16:38.077+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:16:38.077+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:16:38.089+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:16:38.111+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:16:38.111+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:16:38.130+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:16:38.130+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:16:38.146+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.084 seconds
+[2026-02-14T00:17:08.917+0000] {processor.py:153} INFO - Started process (PID=2000) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:17:08.919+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:17:08.919+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:17:08.919+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:17:09.787+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:17:09.787+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:17:09.787+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:17:09.787+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:17:09.788+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:17:09.788+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:17:09.788+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:17:09.788+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:17:09.788+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:17:09.788+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:17:09.788+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:17:09.788+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:17:09.797+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:17:09.828+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:17:09.827+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:17:09.846+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:17:09.846+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:17:09.858+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.948 seconds
+[2026-02-14T00:17:40.099+0000] {processor.py:153} INFO - Started process (PID=2034) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:17:40.102+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:17:40.103+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:17:40.103+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:17:41.455+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:17:41.455+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:17:41.455+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:17:41.455+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:17:41.456+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:17:41.456+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:17:41.456+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:17:41.456+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:17:41.456+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:17:41.456+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:17:41.456+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:17:41.456+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:17:41.462+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:17:41.498+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:17:41.497+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:17:41.517+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:17:41.517+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:17:41.558+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.475 seconds
+[2026-02-14T00:18:11.676+0000] {processor.py:153} INFO - Started process (PID=2067) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:18:11.678+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:18:11.679+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:18:11.678+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:18:12.387+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:18:12.387+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:18:12.389+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:18:12.388+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:18:12.389+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:18:12.389+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:18:12.389+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:18:12.389+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:18:12.390+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:18:12.390+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:18:12.390+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:18:12.390+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:18:12.403+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:18:12.435+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:18:12.434+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:18:12.456+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:18:12.456+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:18:12.472+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.800 seconds
+[2026-02-14T00:22:39.295+0000] {processor.py:153} INFO - Started process (PID=86) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:22:39.305+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:22:39.328+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:22:39.327+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:22:49.174+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:22:49.174+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:22:49.175+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:22:49.175+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:22:49.175+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:22:49.175+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:22:49.175+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:22:49.175+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:22:49.175+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:22:49.175+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:22:49.176+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:22:49.175+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:22:49.301+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:22:49.506+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:22:49.505+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:22:49.548+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:22:49.548+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:22:49.587+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 10.411 seconds
+[2026-02-14T00:23:19.902+0000] {processor.py:153} INFO - Started process (PID=127) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:23:19.906+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:23:19.912+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:23:19.911+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:23:21.768+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:23:21.768+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:23:21.769+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:23:21.769+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:23:21.769+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:23:21.769+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:23:21.769+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:23:21.769+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:23:21.769+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:23:21.769+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:23:21.769+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:23:21.769+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:23:21.780+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:23:21.821+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:23:21.821+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:23:21.841+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:23:21.841+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:23:21.854+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.977 seconds
+[2026-02-14T00:23:52.625+0000] {processor.py:153} INFO - Started process (PID=160) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:23:52.627+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:23:52.629+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:23:52.629+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:23:54.545+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:23:54.545+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:23:54.546+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:23:54.546+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:23:54.546+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:23:54.546+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:23:54.546+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:23:54.546+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:23:54.546+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:23:54.546+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:23:54.547+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:23:54.546+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:23:54.556+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:23:54.582+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:23:54.582+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:23:54.600+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:23:54.600+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:23:54.613+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.994 seconds
+[2026-02-14T00:24:25.714+0000] {processor.py:153} INFO - Started process (PID=194) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:24:25.717+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:24:25.719+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:24:25.719+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:24:28.274+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:24:28.273+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:24:28.274+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:24:28.274+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:24:28.275+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:24:28.275+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:24:28.275+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:24:28.275+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:24:28.275+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:24:28.275+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:24:28.275+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:24:28.275+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:24:28.294+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:24:28.366+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:24:28.366+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:24:28.433+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:24:28.433+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:24:28.485+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 2.783 seconds
+[2026-02-14T00:24:58.977+0000] {processor.py:153} INFO - Started process (PID=244) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:24:58.981+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:24:58.983+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:24:58.983+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:24:59.961+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:24:59.961+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:24:59.962+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:24:59.962+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:24:59.962+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:24:59.962+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:24:59.963+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:24:59.963+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:24:59.964+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:24:59.964+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:24:59.965+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:24:59.965+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:24:59.972+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:24:59.996+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:24:59.996+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:25:00.026+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:25:00.025+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:25:00.047+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.079 seconds
+[2026-02-14T00:25:30.414+0000] {processor.py:153} INFO - Started process (PID=294) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:25:30.416+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:25:30.418+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:25:30.417+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:25:32.711+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:25:32.711+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:25:32.712+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:25:32.712+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:25:32.712+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:25:32.712+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:25:32.712+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:25:32.712+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:25:32.712+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:25:32.712+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:25:32.712+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:25:32.712+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:25:32.718+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:25:32.761+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:25:32.761+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:25:32.780+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:25:32.780+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:25:32.791+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 2.381 seconds
+[2026-02-14T00:26:03.783+0000] {processor.py:153} INFO - Started process (PID=328) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:26:03.785+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:26:03.787+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:26:03.786+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:26:05.005+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:26:05.004+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:26:05.005+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:26:05.005+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:26:05.006+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:26:05.005+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:26:05.006+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:26:05.006+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:26:05.006+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:26:05.006+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:26:05.006+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:26:05.006+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:26:05.012+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:26:05.052+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:26:05.051+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:26:05.074+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:26:05.073+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:26:05.091+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.324 seconds
+[2026-02-14T00:26:35.385+0000] {processor.py:153} INFO - Started process (PID=378) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:26:35.387+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:26:35.388+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:26:35.388+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:26:37.645+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:26:37.644+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:26:37.645+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:26:37.645+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:26:37.645+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:26:37.645+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:26:37.645+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:26:37.645+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:26:37.646+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:26:37.645+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:26:37.646+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:26:37.646+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:26:37.662+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:26:37.707+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:26:37.707+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:26:37.739+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:26:37.739+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:26:37.753+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 2.377 seconds
+[2026-02-14T00:27:08.023+0000] {processor.py:153} INFO - Started process (PID=412) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:27:08.025+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:27:08.026+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:27:08.026+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:27:08.864+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:27:08.864+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:27:08.865+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:27:08.865+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:27:08.865+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:27:08.865+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:27:08.865+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:27:08.865+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:27:08.866+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:27:08.865+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:27:08.866+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:27:08.866+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:27:08.872+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:27:08.896+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:27:08.896+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:27:08.914+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:27:08.914+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:27:08.928+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.913 seconds
+[2026-02-14T00:27:39.455+0000] {processor.py:153} INFO - Started process (PID=462) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:27:39.457+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:27:39.466+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:27:39.465+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:27:40.610+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:27:40.609+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:27:40.610+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:27:40.610+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:27:40.610+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:27:40.610+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:27:40.610+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:27:40.610+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:27:40.611+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:27:40.611+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:27:40.611+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:27:40.611+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:27:40.617+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:27:40.657+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:27:40.657+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:27:40.684+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:27:40.683+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:27:40.698+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.247 seconds
+[2026-02-14T00:32:09.335+0000] {processor.py:153} INFO - Started process (PID=78) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:32:09.346+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:32:09.350+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:32:09.349+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:32:18.493+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:32:18.493+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:32:18.494+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:32:18.494+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:32:18.495+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:32:18.495+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:32:18.497+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:32:18.497+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:32:18.498+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:32:18.498+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:32:18.498+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:32:18.498+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:32:18.584+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:32:19.468+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:32:19.465+0000] {manager.py:504} INFO - Created Permission View: can edit on DAG:Server_Workload_Clustering
+[2026-02-14T00:32:19.490+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:32:19.490+0000] {manager.py:504} INFO - Created Permission View: can delete on DAG:Server_Workload_Clustering
+[2026-02-14T00:32:19.507+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:32:19.507+0000] {manager.py:504} INFO - Created Permission View: can read on DAG:Server_Workload_Clustering
+[2026-02-14T00:32:19.514+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:32:19.508+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:32:19.578+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:32:19.575+0000] {dag.py:2711} INFO - Creating ORM DAG for Server_Workload_Clustering
+[2026-02-14T00:32:19.617+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:32:19.617+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-12T06:00:00+00:00, run_after=2026-02-13T06:00:00+00:00
+[2026-02-14T00:32:19.695+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 10.369 seconds
+[2026-02-14T00:32:50.833+0000] {processor.py:153} INFO - Started process (PID=117) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:32:50.836+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:32:50.840+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:32:50.840+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:32:58.336+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:32:58.336+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:32:58.337+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:32:58.337+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:32:58.337+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:32:58.337+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:32:58.337+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:32:58.337+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:32:58.338+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:32:58.338+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:32:58.338+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:32:58.338+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:32:58.351+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:32:58.385+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:32:58.385+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:32:58.407+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:32:58.407+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-12T06:00:00+00:00, run_after=2026-02-13T06:00:00+00:00
+[2026-02-14T00:32:58.437+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 7.618 seconds
+[2026-02-14T00:33:28.829+0000] {processor.py:153} INFO - Started process (PID=160) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:33:28.834+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:33:28.840+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:33:28.839+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:33:31.098+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:33:31.097+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:33:31.099+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:33:31.099+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:33:31.099+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:33:31.099+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:33:31.099+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:33:31.099+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:33:31.099+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:33:31.099+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:33:31.099+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:33:31.099+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:33:31.108+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:33:31.133+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:33:31.132+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:33:31.155+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:33:31.155+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-12T06:00:00+00:00, run_after=2026-02-13T06:00:00+00:00
+[2026-02-14T00:33:31.172+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 2.358 seconds
+[2026-02-14T00:34:01.494+0000] {processor.py:153} INFO - Started process (PID=203) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:34:01.497+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:34:01.498+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:34:01.498+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:34:03.436+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:34:03.435+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:34:03.437+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:34:03.437+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:34:03.437+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:34:03.437+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:34:03.438+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:34:03.438+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:34:03.438+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:34:03.438+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:34:03.438+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:34:03.438+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:34:03.468+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:34:03.650+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:34:03.648+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:34:03.741+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:34:03.741+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-12T06:00:00+00:00, run_after=2026-02-13T06:00:00+00:00
+[2026-02-14T00:34:03.785+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 2.305 seconds
+[2026-02-14T00:34:33.897+0000] {processor.py:153} INFO - Started process (PID=244) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:34:33.898+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:34:33.901+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:34:33.901+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:34:34.883+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:34:34.883+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:34:34.884+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:34:34.884+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:34:34.884+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:34:34.884+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:34:34.884+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:34:34.884+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:34:34.885+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:34:34.885+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:34:34.885+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:34:34.885+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:34:34.896+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:34:34.923+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:34:34.923+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:34:34.946+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:34:34.945+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-12T06:00:00+00:00, run_after=2026-02-13T06:00:00+00:00
+[2026-02-14T00:34:34.963+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.071 seconds
+[2026-02-14T00:35:05.315+0000] {processor.py:153} INFO - Started process (PID=294) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:35:05.317+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:35:05.318+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:35:05.317+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:35:06.694+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:35:06.694+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:35:06.695+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:35:06.695+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:35:06.695+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:35:06.695+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:35:06.695+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:35:06.695+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:35:06.696+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:35:06.696+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:35:06.696+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:35:06.696+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:35:06.703+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:35:06.821+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:35:06.820+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:35:06.855+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:35:06.855+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-12T06:00:00+00:00, run_after=2026-02-13T06:00:00+00:00
+[2026-02-14T00:35:06.870+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.559 seconds
+[2026-02-14T00:35:37.142+0000] {processor.py:153} INFO - Started process (PID=340) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:35:37.145+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:35:37.148+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:35:37.148+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:35:40.831+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:35:40.826+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:35:40.843+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:35:40.841+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:35:40.845+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:35:40.845+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:35:40.849+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:35:40.849+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:35:40.850+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:35:40.850+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:35:40.850+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:35:40.850+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:35:40.949+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:35:41.015+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:35:41.014+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:35:41.082+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:35:41.082+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:35:41.134+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 4.000 seconds
+[2026-02-14T00:36:11.902+0000] {processor.py:153} INFO - Started process (PID=386) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:36:11.907+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:36:11.909+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:36:11.909+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:36:12.942+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:36:12.942+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:36:12.943+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:36:12.943+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:36:12.943+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:36:12.943+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:36:12.943+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:36:12.943+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:36:12.943+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:36:12.943+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:36:12.944+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:36:12.943+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:36:12.950+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:36:12.975+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:36:12.975+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:36:12.994+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:36:12.994+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:36:13.016+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.130 seconds
+[2026-02-14T00:36:43.428+0000] {processor.py:153} INFO - Started process (PID=436) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:36:43.429+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:36:43.430+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:36:43.430+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:36:44.261+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:36:44.260+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:36:44.262+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:36:44.262+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:36:44.263+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:36:44.262+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:36:44.263+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:36:44.263+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:36:44.263+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:36:44.263+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:36:44.263+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:36:44.263+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:36:44.275+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:36:44.348+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:36:44.348+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:36:44.417+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:36:44.417+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:36:44.465+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.042 seconds
+[2026-02-14T00:37:15.135+0000] {processor.py:153} INFO - Started process (PID=470) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:37:15.138+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:37:15.139+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:37:15.139+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:37:20.919+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:37:20.901+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:37:20.946+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:37:20.946+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:37:20.950+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:37:20.949+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:37:20.952+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:37:20.951+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:37:20.953+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:37:20.952+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:37:20.955+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:37:20.955+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:37:21.200+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:37:22.745+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:37:22.735+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:37:23.744+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:37:23.721+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:37:24.709+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 9.583 seconds
+[2026-02-14T00:37:55.511+0000] {processor.py:153} INFO - Started process (PID=520) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:37:55.515+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:37:55.516+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:37:55.516+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:37:57.076+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:37:57.075+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:37:57.077+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:37:57.077+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:37:57.077+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:37:57.077+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:37:57.077+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:37:57.077+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:37:57.078+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:37:57.077+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:37:57.078+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:37:57.078+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:37:57.085+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:37:57.123+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:37:57.123+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:37:57.146+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:37:57.146+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:37:57.158+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.661 seconds
+[2026-02-14T00:38:27.564+0000] {processor.py:153} INFO - Started process (PID=561) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:38:27.577+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:38:27.590+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:38:27.587+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:38:33.771+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:38:33.770+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:38:33.772+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:38:33.772+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:38:33.773+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:38:33.773+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:38:33.773+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:38:33.773+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:38:33.773+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:38:33.773+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:38:33.774+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:38:33.773+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:38:33.790+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:38:33.885+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:38:33.884+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:38:33.963+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:38:33.962+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:38:34.022+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 6.522 seconds
+[2026-02-14T00:39:04.302+0000] {processor.py:153} INFO - Started process (PID=604) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:39:04.306+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:39:04.313+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:39:04.312+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:39:12.897+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:39:12.896+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:39:12.899+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:39:12.899+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:39:12.900+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:39:12.900+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:39:12.900+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:39:12.900+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:39:12.900+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:39:12.900+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:39:12.901+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:39:12.901+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:39:12.920+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:39:12.982+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:39:12.981+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:39:13.029+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:39:13.029+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:39:13.086+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 8.799 seconds
+[2026-02-14T00:39:43.858+0000] {processor.py:153} INFO - Started process (PID=654) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:39:43.862+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:39:43.866+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:39:43.866+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:39:45.508+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:39:45.507+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:39:45.510+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:39:45.510+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:39:45.511+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:39:45.511+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:39:45.511+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:39:45.511+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:39:45.512+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:39:45.511+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:39:45.512+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:39:45.512+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:39:45.524+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:39:45.650+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:39:45.649+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:39:45.694+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:39:45.694+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:39:45.723+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.881 seconds
+[2026-02-14T00:40:16.832+0000] {processor.py:153} INFO - Started process (PID=688) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:40:16.854+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:40:16.877+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:40:16.876+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:40:18.516+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:40:18.514+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:40:18.519+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:40:18.519+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:40:18.521+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:40:18.521+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:40:18.522+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:40:18.522+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:40:18.523+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:40:18.523+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:40:18.524+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:40:18.524+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:40:18.555+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:40:18.666+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:40:18.665+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:40:18.725+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:40:18.725+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:40:18.769+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.963 seconds
+[2026-02-14T00:40:48.890+0000] {processor.py:153} INFO - Started process (PID=738) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:40:48.891+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:40:48.892+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:40:48.892+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:40:49.864+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:40:49.864+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:40:49.865+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:40:49.865+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:40:49.865+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:40:49.865+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:40:49.865+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:40:49.865+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:40:49.865+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:40:49.865+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:40:49.866+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:40:49.866+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:40:49.870+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:40:49.895+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:40:49.895+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:40:49.921+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:40:49.921+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:40:49.947+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.063 seconds
+[2026-02-14T00:41:20.370+0000] {processor.py:153} INFO - Started process (PID=772) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:41:20.371+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:41:20.372+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:41:20.371+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:41:21.321+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:41:21.320+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:41:21.321+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:41:21.321+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:41:21.321+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:41:21.321+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:41:21.321+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:41:21.321+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:41:21.322+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:41:21.322+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:41:21.322+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:41:21.322+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:41:21.327+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:41:21.348+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:41:21.348+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:41:21.375+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:41:21.375+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:41:21.388+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.023 seconds
+[2026-02-14T00:41:52.285+0000] {processor.py:153} INFO - Started process (PID=822) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:41:52.288+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:41:52.289+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:41:52.288+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:41:53.921+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:41:53.920+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:41:53.922+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:41:53.922+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:41:53.923+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:41:53.922+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:41:53.923+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:41:53.923+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:41:53.923+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:41:53.923+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:41:53.923+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:41:53.923+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:41:53.934+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:41:53.975+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:41:53.975+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:41:53.996+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:41:53.996+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:41:54.009+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.727 seconds
+[2026-02-14T00:42:24.846+0000] {processor.py:153} INFO - Started process (PID=856) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:42:24.848+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:42:24.849+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:42:24.849+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:42:25.968+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:42:25.968+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:42:25.969+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:42:25.969+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:42:25.969+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:42:25.969+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:42:25.969+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:42:25.969+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:42:25.969+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:42:25.969+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:42:25.969+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:42:25.969+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:42:25.976+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:42:26.005+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:42:26.004+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:42:26.036+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:42:26.035+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:42:26.048+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.220 seconds
+[2026-02-14T00:42:56.671+0000] {processor.py:153} INFO - Started process (PID=906) to work on /opt/airflow/dags/airflow.py
+[2026-02-14T00:42:56.676+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-14T00:42:56.679+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:42:56.679+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-14T00:42:59.782+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:42:59.782+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:42:59.783+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:42:59.783+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:42:59.783+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:42:59.783+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:42:59.784+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:42:59.784+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:42:59.784+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:42:59.784+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:42:59.784+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:42:59.784+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: Server_Workload_Clustering
+[2026-02-14T00:42:59.792+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Server_Workload_Clustering']) retrieved from /opt/airflow/dags/airflow.py
+[2026-02-14T00:42:59.826+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:42:59.826+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2026-02-14T00:42:59.853+0000] {logging_mixin.py:137} INFO - [2026-02-14T00:42:59.853+0000] {dag.py:3441} INFO - Setting next_dagrun for Server_Workload_Clustering to 2026-02-13T06:00:00+00:00, run_after=2026-02-14T06:00:00+00:00
+[2026-02-14T00:42:59.873+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 3.219 seconds

@@ -1,0 +1,37 @@
+[2026-02-13T23:56:05.255+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: Server_Workload_Clustering.start_pipeline manual__2026-02-13T23:55:57.777593+00:00 [queued]>
+[2026-02-13T23:56:05.299+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: Server_Workload_Clustering.start_pipeline manual__2026-02-13T23:55:57.777593+00:00 [queued]>
+[2026-02-13T23:56:05.299+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2026-02-13T23:56:05.301+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2026-02-13T23:56:05.302+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2026-02-13T23:56:05.352+0000] {taskinstance.py:1300} INFO - Executing <Task(BashOperator): start_pipeline> on 2026-02-13 23:55:57.777593+00:00
+[2026-02-13T23:56:05.481+0000] {standard_task_runner.py:55} INFO - Started process 360 to run task
+[2026-02-13T23:56:05.579+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'Server_Workload_Clustering', 'start_pipeline', 'manual__2026-02-13T23:55:57.777593+00:00', '--job-id', '19', '--raw', '--subdir', 'DAGS_FOLDER/***.py', '--cfg-path', '/tmp/tmporxb78m4']
+[2026-02-13T23:56:05.622+0000] {standard_task_runner.py:83} INFO - Job 19: Subtask start_pipeline
+[2026-02-13T23:56:06.133+0000] {task_command.py:388} INFO - Running <TaskInstance: Server_Workload_Clustering.start_pipeline manual__2026-02-13T23:55:57.777593+00:00 [running]> on host dd3b82610d33
+[2026-02-13T23:56:06.497+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=alaska
+AIRFLOW_CTX_DAG_ID=Server_Workload_Clustering
+AIRFLOW_CTX_TASK_ID=start_pipeline
+AIRFLOW_CTX_EXECUTION_DATE=2026-02-13T23:55:57.777593+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2026-02-13T23:55:57.777593+00:00
+[2026-02-13T23:56:06.501+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2026-02-13T23:56:06.503+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'echo "========================================" && echo "Server Workload Clustering Pipeline" && echo "Started at: $(date)" && echo "Working dir: $(pwd)" && echo "========================================" && ls -la /opt/***/dags/data/']
+[2026-02-13T23:56:06.560+0000] {subprocess.py:86} INFO - Output:
+[2026-02-13T23:56:06.585+0000] {subprocess.py:93} INFO - ========================================
+[2026-02-13T23:56:06.586+0000] {subprocess.py:93} INFO - Server Workload Clustering Pipeline
+[2026-02-13T23:56:06.589+0000] {subprocess.py:93} INFO - Started at: Fri Feb 13 23:56:06 UTC 2026
+[2026-02-13T23:56:06.590+0000] {subprocess.py:93} INFO - Working dir: /tmp/***tmp_2g0mst1
+[2026-02-13T23:56:06.590+0000] {subprocess.py:93} INFO - ========================================
+[2026-02-13T23:56:06.606+0000] {subprocess.py:93} INFO - total 16
+[2026-02-13T23:56:06.606+0000] {subprocess.py:93} INFO - drwxr-xr-x 4 default root   128 Feb 13 23:41 .
+[2026-02-13T23:56:06.607+0000] {subprocess.py:93} INFO - drwxr-xr-x 6 default root   192 Feb 13 23:46 ..
+[2026-02-13T23:56:06.607+0000] {subprocess.py:93} INFO - -rw-r--r-- 1 default root 10701 Feb 13 23:41 server_workloads.csv
+[2026-02-13T23:56:06.607+0000] {subprocess.py:93} INFO - -rw-r--r-- 1 default root   178 Feb 13 23:41 test.csv
+[2026-02-13T23:56:06.608+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-02-13T23:56:06.700+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=Server_Workload_Clustering, task_id=start_pipeline, execution_date=20260213T235557, start_date=20260213T235605, end_date=20260213T235606
+[2026-02-13T23:56:06.758+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2026-02-13T23:56:06.858+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,44 @@
+[2026-02-13T23:56:21.553+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: Server_Workload_Clustering.build_save_model_task manual__2026-02-13T23:55:57.777593+00:00 [queued]>
+[2026-02-13T23:56:21.572+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: Server_Workload_Clustering.build_save_model_task manual__2026-02-13T23:55:57.777593+00:00 [queued]>
+[2026-02-13T23:56:21.572+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2026-02-13T23:56:21.573+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2026-02-13T23:56:21.573+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2026-02-13T23:56:21.591+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): build_save_model_task> on 2026-02-13 23:55:57.777593+00:00
+[2026-02-13T23:56:21.613+0000] {standard_task_runner.py:55} INFO - Started process 391 to run task
+[2026-02-13T23:56:21.619+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'Server_Workload_Clustering', 'build_save_model_task', 'manual__2026-02-13T23:55:57.777593+00:00', '--job-id', '25', '--raw', '--subdir', 'DAGS_FOLDER/***.py', '--cfg-path', '/tmp/tmp6yoma9qw']
+[2026-02-13T23:56:21.622+0000] {standard_task_runner.py:83} INFO - Job 25: Subtask build_save_model_task
+[2026-02-13T23:56:21.740+0000] {task_command.py:388} INFO - Running <TaskInstance: Server_Workload_Clustering.build_save_model_task manual__2026-02-13T23:55:57.777593+00:00 [running]> on host dd3b82610d33
+[2026-02-13T23:56:21.818+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=alaska
+AIRFLOW_CTX_DAG_ID=Server_Workload_Clustering
+AIRFLOW_CTX_TASK_ID=build_save_model_task
+AIRFLOW_CTX_EXECUTION_DATE=2026-02-13T23:55:57.777593+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2026-02-13T23:55:57.777593+00:00
+[2026-02-13T23:56:21.986+0000] {logging_mixin.py:137} INFO - k= 1  SSE=145.9940
+[2026-02-13T23:56:22.031+0000] {logging_mixin.py:137} INFO - k= 2  SSE=72.2840
+[2026-02-13T23:56:22.093+0000] {logging_mixin.py:137} INFO - k= 3  SSE=43.6229
+[2026-02-13T23:56:22.176+0000] {logging_mixin.py:137} INFO - k= 4  SSE=15.2960
+[2026-02-13T23:56:22.238+0000] {logging_mixin.py:137} INFO - k= 5  SSE=13.9401
+[2026-02-13T23:56:22.292+0000] {logging_mixin.py:137} INFO - k= 6  SSE=12.3870
+[2026-02-13T23:56:22.357+0000] {logging_mixin.py:137} INFO - k= 7  SSE=11.5683
+[2026-02-13T23:56:22.403+0000] {logging_mixin.py:137} INFO - k= 8  SSE=11.0149
+[2026-02-13T23:56:22.443+0000] {logging_mixin.py:137} INFO - k= 9  SSE=10.5721
+[2026-02-13T23:56:22.472+0000] {logging_mixin.py:137} INFO - k=10  SSE=10.2503
+[2026-02-13T23:56:22.514+0000] {logging_mixin.py:137} INFO - k=11  SSE=9.8860
+[2026-02-13T23:56:22.561+0000] {logging_mixin.py:137} INFO - k=12  SSE=9.4645
+[2026-02-13T23:56:22.639+0000] {logging_mixin.py:137} INFO - k=13  SSE=9.1988
+[2026-02-13T23:56:22.689+0000] {logging_mixin.py:137} INFO - k=14  SSE=8.8676
+[2026-02-13T23:56:22.738+0000] {logging_mixin.py:137} INFO - k=15  SSE=8.7800
+[2026-02-13T23:56:22.782+0000] {logging_mixin.py:137} INFO - k=16  SSE=8.4674
+[2026-02-13T23:56:22.823+0000] {logging_mixin.py:137} INFO - k=17  SSE=8.1413
+[2026-02-13T23:56:22.865+0000] {logging_mixin.py:137} INFO - k=18  SSE=7.9574
+[2026-02-13T23:56:22.990+0000] {logging_mixin.py:137} INFO - k=19  SSE=7.6729
+[2026-02-13T23:56:23.165+0000] {logging_mixin.py:137} INFO - k=20  SSE=7.3950
+[2026-02-13T23:56:23.175+0000] {logging_mixin.py:137} INFO - Model saved to /opt/***/dags/model/workload_model.sav
+[2026-02-13T23:56:23.176+0000] {python.py:177} INFO - Done. Returned value was: [145.99402903607927, 72.28395360717016, 43.622897962450864, 15.295952486840427, 13.940098123419338, 12.386950735490219, 11.568308992011469, 11.01492818736779, 10.57209577736814, 10.250269557159541, 9.885978242424816, 9.464521113930433, 9.198795103823828, 8.867593180349456, 8.780036147296173, 8.46736384719015, 8.141325050845516, 7.957380823662311, 7.6728991582333155, 7.394956284093686]
+[2026-02-13T23:56:23.297+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=Server_Workload_Clustering, task_id=build_save_model_task, execution_date=20260213T235557, start_date=20260213T235621, end_date=20260213T235623
+[2026-02-13T23:56:23.541+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2026-02-13T23:56:23.694+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

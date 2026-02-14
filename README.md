@@ -50,7 +50,7 @@ K-Means clustering with the elbow method (via `kneed`) to determine optimal clus
 ## Project Structure
 
 ```
-Airflow_Labs/
+airflow-workload-clustering/
 ├── dags/
 │   ├── airflow.py                 # DAG definition
 │   ├── data/
@@ -79,46 +79,29 @@ Airflow_Labs/
 
 ### Steps
 
-1. **Navigate to the lab directory:**
+1. **Clone the repo and navigate to it:**
 
    ```bash
-   cd Airflow_Labs
+   git clone https://github.com/tengli-alaska/airflow-workload-clustering.git
+   cd airflow-workload-clustering
    ```
 
-2. **Fetch the Airflow docker-compose file:**
+2. **Run the setup script:**
 
    ```bash
-   curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.5.1/docker-compose.yaml'
+   chmod +x setup.sh
+   ./setup.sh
    ```
 
-3. **Create required directories and set Airflow user:**
+   This creates the required directories, sets the Airflow user, and verifies all files are in place.
 
-   ```bash
-   mkdir -p ./dags ./logs ./plugins ./config
-   echo -e "AIRFLOW_UID=$(id -u)" > .env
-   ```
-
-4. **Update `docker-compose.yaml`:**
-
-   ```yaml
-   AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
-   _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:- pandas scikit-learn kneed}
-
-   # Add to volumes:
-   - ${AIRFLOW_PROJ_DIR:-.}/working_data:/opt/airflow/working_data
-
-   # Update credentials:
-   _AIRFLOW_WWW_USER_USERNAME: ${_AIRFLOW_WWW_USER_USERNAME:-airflow2}
-   _AIRFLOW_WWW_USER_PASSWORD: ${_AIRFLOW_WWW_USER_PASSWORD:-airflow2}
-   ```
-
-5. **Initialize the database:**
+3. **Initialize the database:**
 
    ```bash
    docker compose up airflow-init
    ```
 
-6. **Start Airflow:**
+4. **Start Airflow:**
 
    ```bash
    docker compose up
@@ -129,18 +112,14 @@ Airflow_Labs/
    airflow-webserver-1 | ... "GET /health HTTP/1.1" 200 ...
    ```
 
-7. **Open the UI:** Visit `localhost:8080` and log in with `airflow2` / `airflow2`.
+5. **Open the UI:** Visit `localhost:8080` and log in with `airflow2` / `airflow2`.
 
-8. **Trigger the DAG:** Toggle **Server_Workload_Clustering** on and click the play button.
+6. **Trigger the DAG:** Toggle **Server_Workload_Clustering** on and click the play button.
 
-9. **Check results:** Click `load_model_task` → **Logs** to see optimal cluster count and workload classifications.
+7. **Check results:** Click `load_model_task` → **Logs** to see optimal cluster count and workload classifications.
 
-10. **Stop Airflow:**
+8. **Stop Airflow:**
 
-    ```bash
-    docker compose down
-    ```
-
-## Author
-
-Alaska Teng Li — Northeastern University, MS ECE
+   ```bash
+   docker compose down
+   ```

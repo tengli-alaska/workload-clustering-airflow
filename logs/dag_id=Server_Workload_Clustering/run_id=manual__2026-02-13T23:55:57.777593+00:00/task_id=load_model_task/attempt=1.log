@@ -1,0 +1,39 @@
+[2026-02-13T23:56:28.100+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: Server_Workload_Clustering.load_model_task manual__2026-02-13T23:55:57.777593+00:00 [queued]>
+[2026-02-13T23:56:28.155+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: Server_Workload_Clustering.load_model_task manual__2026-02-13T23:55:57.777593+00:00 [queued]>
+[2026-02-13T23:56:28.156+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2026-02-13T23:56:28.157+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2026-02-13T23:56:28.158+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2026-02-13T23:56:28.213+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): load_model_task> on 2026-02-13 23:55:57.777593+00:00
+[2026-02-13T23:56:28.234+0000] {standard_task_runner.py:55} INFO - Started process 2832 to run task
+[2026-02-13T23:56:28.242+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'Server_Workload_Clustering', 'load_model_task', 'manual__2026-02-13T23:55:57.777593+00:00', '--job-id', '28', '--raw', '--subdir', 'DAGS_FOLDER/***.py', '--cfg-path', '/tmp/tmp49srubs0']
+[2026-02-13T23:56:28.247+0000] {standard_task_runner.py:83} INFO - Job 28: Subtask load_model_task
+[2026-02-13T23:56:28.464+0000] {task_command.py:388} INFO - Running <TaskInstance: Server_Workload_Clustering.load_model_task manual__2026-02-13T23:55:57.777593+00:00 [running]> on host dd3b82610d33
+[2026-02-13T23:56:28.665+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=alaska
+AIRFLOW_CTX_DAG_ID=Server_Workload_Clustering
+AIRFLOW_CTX_TASK_ID=load_model_task
+AIRFLOW_CTX_EXECUTION_DATE=2026-02-13T23:55:57.777593+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2026-02-13T23:55:57.777593+00:00
+[2026-02-13T23:56:28.688+0000] {logging_mixin.py:137} INFO - === Optimal number of workload clusters: 4 ===
+[2026-02-13T23:56:28.761+0000] {logging_mixin.py:137} INFO - 
+Test workloads:
+   cpu_percent  memory_percent  ...  runtime_seconds  gpu_util_percent
+0           92              35  ...              500                 8
+1           45              90  ...             1100                12
+2           60              75  ...             2000                92
+3           12              10  ...               45                 1
+4           70              55  ...              800                50
+
+[5 rows x 6 columns]
+[2026-02-13T23:56:28.892+0000] {logging_mixin.py:137} INFO -   Workload 1: cluster=9 (Cluster-9)
+[2026-02-13T23:56:28.896+0000] {logging_mixin.py:137} INFO -   Workload 2: cluster=18 (Cluster-18)
+[2026-02-13T23:56:28.902+0000] {logging_mixin.py:137} INFO -   Workload 3: cluster=10 (Cluster-10)
+[2026-02-13T23:56:28.903+0000] {logging_mixin.py:137} INFO -   Workload 4: cluster=5 (Cluster-5)
+[2026-02-13T23:56:28.911+0000] {logging_mixin.py:137} INFO -   Workload 5: cluster=7 (Cluster-7)
+[2026-02-13T23:56:28.938+0000] {python.py:177} INFO - Done. Returned value was: 9
+[2026-02-13T23:56:29.243+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=Server_Workload_Clustering, task_id=load_model_task, execution_date=20260213T235557, start_date=20260213T235628, end_date=20260213T235629
+[2026-02-13T23:56:29.464+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2026-02-13T23:56:29.714+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check
