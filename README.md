@@ -1,4 +1,4 @@
-# Airflow Lab 1 — Server Workload Clustering Pipeline
+# Server Workload Clustering Pipeline with Airflow
 
 An Apache Airflow DAG that automates K-Means clustering of server workload telemetry data to identify workload profiles (CPU-bound, memory-bound, GPU-intensive, idle). Runs inside Docker using `docker compose`.
 
@@ -123,3 +123,11 @@ airflow-workload-clustering/
    ```bash
    docker compose down
    ```
+   
+   <img width="1478" height="727" alt="airflow" src="https://github.com/user-attachments/assets/3d076b6e-cec5-4170-8389-b1278db35bb6" />
+
+
+
+   
+
+   
